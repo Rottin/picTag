@@ -3,6 +3,7 @@ package com.rottin.administrator.pictag;
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
 import android.annotation.TargetApi;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
@@ -37,6 +38,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -360,10 +362,16 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             showProgress(false);
 
             if (success) {
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(intent);
                 finish();
             } else {
-                mPasswordView.setError(getString(R.string.error_incorrect_password));
+                mPasswordView.setError(null);
                 mPasswordView.requestFocus();
+                Animation shake = AnimationUtils.loadAnimation(getBaseContext(), R.anim.shake);
+                mPasswordView.startAnimation(shake);
+                mPasswordView.setText("");
+                mPasswordView.setHint("密码错误！");
             }
         }
 
