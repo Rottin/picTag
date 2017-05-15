@@ -84,6 +84,14 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         forgetPwd = (TextView) findViewById(R.id.login_forget_text);
         msignUp = (TextView) findViewById(R.id.login_signup_text);
+        forgetPwd.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, ForgetPwdActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
         msignUp.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {

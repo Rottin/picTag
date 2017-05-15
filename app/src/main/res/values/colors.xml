@@ -3,8 +3,10 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="signinButtonPressed">#0ebc7d</color>
     <color name="signinButtonUnpressed">#0bd38a</color>
+    <color name="signinButtonPressed">#0ebc7d</color>
     <color name="signinTextUnpressed">#c7c4c4</color>
     <color name="signinTextPressed">#8f8a8a</color>
+    <color name="forgetButtonUnpressed">#00BCD4</color>
+    <color name="forgetButtonPressed">#038b9c</color>
 </resources>
