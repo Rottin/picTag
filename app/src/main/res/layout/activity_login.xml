@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_margin="5dp"
-                android:background="@drawable/shape_edittext"
+                android:background="@drawable/shape_signin_edittext"
                 android:drawableLeft="@drawable/ic_login_email"
                 android:drawablePadding="5dp"
                 android:hint="邮箱"
@@ -65,7 +65,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="5dp"
-                android:background="@drawable/shape_edittext"
+                android:background="@drawable/shape_signin_edittext"
                 android:drawableLeft="@drawable/ic_login_password"
                 android:drawablePadding="5dp"
                 android:hint="密码"
@@ -88,7 +88,7 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginTop="10dp"
-                android:background="@drawable/selecter_button"
+                android:background="@drawable/selecter_signin_button"
                 android:text="登录"
                 android:textColor="#ffffff"
                 android:textSize="20dp"
@@ -101,7 +101,7 @@
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 android:text="忘记密码？"
-                android:textColor="#c7c4c4"
+                android:textColor="@drawable/selecter_signin_text"
                 android:textSize="14dp" />
 
             <LinearLayout
@@ -124,7 +124,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_weight="1"
                 android:text="新用户？立即注册"
-                android:textColor="#c7c4c4"
+                android:textColor="@drawable/selecter_signin_text"
                 android:textSize="14dp" />
         </LinearLayout>
     </LinearLayout>
