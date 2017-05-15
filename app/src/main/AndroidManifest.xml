@@ -35,7 +35,10 @@
         <activity
             android:name=".ForgetPwdActivity"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustPan"></activity>
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".LoginActivity2"
+            android:label="@string/title_activity_login2"></activity>
     </application>
 
 </manifest>
