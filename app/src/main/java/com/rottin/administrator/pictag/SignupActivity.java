@@ -32,7 +32,6 @@ public class SignupActivity extends AppCompatActivity {
         phoneNumberEt = (EditText) findViewById(R.id.signup_phone);
         passwordEt = (EditText) findViewById(R.id.signup_password);
         passwordConfirmEt = (EditText) findViewById(R.id.signup_password_confirm);
-        
     }
 
     @Override

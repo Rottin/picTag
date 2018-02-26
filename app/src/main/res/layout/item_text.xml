@@ -5,6 +5,4 @@
     android:gravity="center_vertical"
     android:paddingBottom="15dp"
     android:paddingTop="15dp"
-    android:textSize="16dp"
-    android:text="TEXT"
     android:textColor="#ffffff" />

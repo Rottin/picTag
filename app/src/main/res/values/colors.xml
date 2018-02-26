@@ -9,4 +9,13 @@
     <color name="signinTextPressed">#8f8a8a</color>
     <color name="forgetButtonUnpressed">#00BCD4</color>
     <color name="forgetButtonPressed">#038b9c</color>
+    <color name="bluetextPressed">#426bb7</color>
+    <color name="bluetextUnpressed">#5788e2</color>
+    <color name="beginButtonUnPressed">#858bef</color>
+    <color name="beginButtonPressed">#7378c6</color>
+    <color name="grayButtonUnpressed">#f1eaea</color>
+    <color name="grayButtonPressed">#d4cece</color>
+    <color name="mBlue">#3140a0</color>
+    <color name="mGreen">#009688</color>
+    <color name="mBlack">#313030</color>
 </resources>

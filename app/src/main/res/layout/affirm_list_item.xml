@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/affirm_list_item_image"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/affirm_list_item_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/affirm_list_item_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@id/affirm_list_item_image"
+        android:ellipsize="end"
+        android:lines="2" />
+
+    <TextView
+        android:id="@+id/affirm_list_item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/affirm_list_item_image"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/affirm_list_item_image" />
+
+    <TextView
+        android:id="@+id/affirm_list_item_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/affirm_list_item_image"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp" />
+
+</RelativeLayout>

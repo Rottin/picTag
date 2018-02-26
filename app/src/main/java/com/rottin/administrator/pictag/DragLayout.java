@@ -2,23 +2,22 @@ package com.rottin.administrator.pictag;
 
 import android.content.Context;
 import android.graphics.Color;
-import android.graphics.PorterDuff;
+import android.graphics.PorterDuff.Mode;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v4.view.ViewCompat;
 import android.support.v4.widget.ViewDragHelper;
 import android.util.AttributeSet;
-import android.view.GestureDetector;
+import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import com.nineoldandroids.view.ViewHelper;
+import android.widget.FrameLayout.LayoutParams;
 
-/**
- * Created by Administrator on 2017/5/13.
- */
+import com.rottin.administrator.pictag.R;
+import com.nineoldandroids.view.ViewHelper;
 
 public class DragLayout extends FrameLayout {
 
@@ -52,7 +51,7 @@ public class DragLayout extends FrameLayout {
         dragHelper = ViewDragHelper.create(this, dragHelperCallback);
     }
 
-    class YScrollDetector extends GestureDetector.SimpleOnGestureListener {
+    class YScrollDetector extends SimpleOnGestureListener {
         @Override
         public boolean onScroll(MotionEvent e1, MotionEvent e2, float dx, float dy) {
             return Math.abs(dy) <= Math.abs(dx);
@@ -100,7 +99,7 @@ public class DragLayout extends FrameLayout {
 
         @Override
         public void onViewPositionChanged(View changedView, int left, int top,
-                                          int dx, int dy) {
+                int dx, int dy) {
             if (changedView == vg_main) {
                 mainLeft = left;
             } else {
@@ -216,7 +215,7 @@ public class DragLayout extends FrameLayout {
             ViewHelper.setScaleX(iv_shadow, f1 * 1.4f * (1 - percent * 0.12f));
             ViewHelper.setScaleY(iv_shadow, f1 * 1.85f * (1 - percent * 0.12f));
         }
-        getBackground().setColorFilter(evaluate(percent, Color.BLACK, Color.TRANSPARENT), PorterDuff.Mode.SRC_OVER);
+        getBackground().setColorFilter(evaluate(percent, Color.BLACK, Color.TRANSPARENT), Mode.SRC_OVER);
     }
 
     private Integer evaluate(float fraction, Object startValue, Integer endValue) {

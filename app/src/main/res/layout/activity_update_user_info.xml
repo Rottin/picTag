@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <include layout="@layout/title_item" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="邮箱：" />
+
+            <EditText
+                android:id="@+id/update_info_email"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_eddit_bg"
+                android:hint="请输入常用邮箱"
+                android:inputType="textEmailAddress"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/update_info_hint_mail"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#d00" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="用户名：" />
+
+            <EditText
+                android:id="@+id/update_info_uname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_eddit_bg"
+                android:hint="请输入用户名"
+                android:enabled="false"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/update_info_hint_uname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#d00" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="昵称：" />
+
+            <EditText
+                android:id="@+id/update_info_nickname"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_eddit_bg"
+                android:hint="请输入昵称"
+                android:textSize="14sp" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/update_info_hint_nickname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#d00" />
+
+        <RadioGroup
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/update_info_rb_man"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radiobutton"
+                android:checked="true"
+                android:text="男" />
+
+            <RadioButton
+                android:id="@+id/update_info_rb_woman"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:button="@drawable/radiobutton"
+                android:text="女" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/update_info_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button"
+            
+            android:text="修改"
+            android:textColor="#fff" />
+    </TableLayout>
+
+</TableView>

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/rottin/administrator/pictag/activity/AddressActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/rottin/administrator/pictag/activity/AffirmActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/rottin/administrator/pictag/activity/DetailedActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/rottin/administrator/pictag/activity/GoodsActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/rottin/administrator/pictag/activity/UpdateAddressActivity.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/rottin/administrator/pictag/adapter/AddressAdapter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/rottin/administrator/pictag/data/DataInput.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/rottin/administrator/pictag/data/GlobalData.java" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

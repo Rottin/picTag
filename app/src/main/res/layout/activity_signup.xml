@@ -7,7 +7,7 @@
     android:background="#fff"
     android:orientation="vertical"
     android:padding="10dp"
-    tools:context="com.rottin.administrator.pictag.SignupActivity">
+    tools:context="com.rottin.administrator.pictag.activity.SignupActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -104,6 +104,8 @@
         android:padding="10dp"
         android:singleLine="true" />
 
+
+
     <Button
         android:id="@+id/signup_button"
         style="?android:attr/borderlessButtonStyle"
@@ -115,4 +117,12 @@
         android:textColor="#fff"
         android:textSize="20dp"
         android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/signup_progress"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:visibility="gone" />
 </LinearLayout>

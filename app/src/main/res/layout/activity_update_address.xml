@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+        <include layout="@layout/title_item" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="姓名："
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/update_address_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_eddit_bg"
+                android:hint="请输入姓名"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/update_address_hint_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#d00" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="电话："
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/update_address_tel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_eddit_bg"
+                android:hint="请输入电话"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/update_address_hint_tel"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#d00" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:text="地址："
+                tools:ignore="HardcodedText" />
+
+            <EditText
+                android:id="@+id/update_address_address"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/login_eddit_bg"
+                android:hint="请输入地址"
+                android:textSize="14sp"
+                tools:ignore="HardcodedText" />
+
+        </TableRow>
+
+        <TextView
+            android:id="@+id/update_address_hint_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#d00" />
+
+        <Button
+            android:id="@+id/update_address_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button"
+            android:text="修改"
+            android:textColor="#fff"
+            tools:ignore="HardcodedText" />
+
+</TableLayout>

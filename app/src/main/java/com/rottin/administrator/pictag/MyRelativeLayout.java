@@ -5,9 +5,7 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.RelativeLayout;
 
-/**
- * Created by Administrator on 2017/5/13.
- */
+import com.rottin.administrator.pictag.DragLayout.Status;
 
 public class MyRelativeLayout extends RelativeLayout {
     private DragLayout dl;
@@ -30,7 +28,7 @@ public class MyRelativeLayout extends RelativeLayout {
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent event) {
-        if (dl.getStatus() != DragLayout.Status.Close) {
+        if (dl.getStatus() != Status.Close) {
             return true;
         }
         return super.onInterceptTouchEvent(event);
@@ -38,7 +36,7 @@ public class MyRelativeLayout extends RelativeLayout {
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
-        if (dl.getStatus() != DragLayout.Status.Close) {
+        if (dl.getStatus() != Status.Close) {
             if (event.getAction() == MotionEvent.ACTION_UP) {
                 dl.close();
             }
